@@ -54,3 +54,11 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+.list_line_odd{
+  background-color: #23c88b;
+}
+
+.list_line_even{
+  background-color: #ff88bb;
+}
