@@ -1,14 +1,25 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html>
 <head>
   <title>RailorCoaster</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag "scaffold" %>
+  <%= stylesheet_link_tag "railorCoaster", :media => "all" %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
-
-<%= yield %>
-
+<body id="store">
+  <div id="banner">
+    <%= image_tag("http://www.intertank.org/img/linkimg/bunny.gif") %>
+    <%= @page_title || "Page Titel text" %>
+  </div>
+  <div id="colums">
+    <div id="side" >
+      <a href="http://localhost:3000" >Home</a><br />
+      <a href="http://localhost:3000/products" >Products</a><br />
+    </div>
+    <div id="main" >
+      <%= yield %>
+    </div>
+  </div>
 </body>
 </html>
