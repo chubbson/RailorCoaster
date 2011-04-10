@@ -37,4 +37,20 @@
   font-size: small;
 }
 
+.entry {
+  background-color: azure
+}
+
+.price_line {
+  font: small-caps 20px/20px "Times new Roman", serif;
+  <!--background-color: red;->
+}
+
+.price {
+  background-color: yellow;
+}
+
+#store .entry from, #store .entry from div {
+ display: inline;
+}
 
